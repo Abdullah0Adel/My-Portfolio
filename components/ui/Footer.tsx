@@ -10,12 +10,12 @@ export default function Footer() {
         <button className="nav-logo" onClick={() => go("hero")}>
           <div className="nav-logo-icon"><Code2 size={14} color="white" /></div>
           <span className="font-display" style={{ fontWeight:700, fontSize:"0.95rem", color:"var(--text-primary)" }}>
-            Alex<span className="gradient-text">Morgan</span>
+            Abdullah<span className="gradient-text">Adel</span>
           </span>
         </button>
 
         <p className="xs" style={{ color:"rgba(240,246,255,0.3)", display:"flex", alignItems:"center", gap:5 }}>
-          © {new Date().getFullYear()} Alex Morgan. Made with <Heart size={11} fill="#ef4444" color="#ef4444" /> using Next.js & TypeScript
+          © {new Date().getFullYear()} Abdullah Adel. Made with <Heart size={11} fill="#ef4444" color="#ef4444" /> using Next.js & TypeScript
         </p>
 
         <div style={{ display:"flex", gap:20 }}>
