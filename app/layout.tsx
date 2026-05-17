@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Alex Morgan — Frontend Developer",
+  title: "Abdullah Adel — Frontend Developer",
   description:
     "Frontend Developer specializing in React.js, Next.js, TypeScript, and modern web technologies.",
-  keywords: ["Frontend Developer", "React.js", "Next.js", "TypeScript"],
-  authors: [{ name: "Alex Morgan" }],
+  keywords: ["Frontend Developer", "React.js", "Next.js", "TypeScript", "Bootstrap", "Tailwinde CSS"],
+  authors: [{ name: "Abdullah Adel" }],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -153,7 +153,7 @@ export const PROJECTS: Project[] = [
     liveUrl: "https://r7-react-cure-2-8lbg.vercel.app",
     githubUrl: "https://github.com/Huma-volve/R7-React-Cure-2",
   },
-  {
+/*   {
     id: 4,
     title: "TaskFlow Pro",
     description:
@@ -163,7 +163,7 @@ export const PROJECTS: Project[] = [
     technologies: ["React.js", "Redux Toolkit", "TypeScript", "Bootstrap"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com",
-  },
+  }, */
 ];
 
 export const SOCIAL_LINKS = [
