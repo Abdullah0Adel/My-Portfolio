@@ -3,6 +3,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Abdullah Adel — Frontend Developer",
+  icons: {
+  icon: "/images/Abdullah's-Logo.png",           // أو "/icon.png"
+  apple: "/apple-icon.png",       // للـ iOS
+  shortcut: "/favicon-16x16.png",
+},
   description:
     "Frontend Developer specializing in React.js, Next.js, TypeScript, and modern web technologies.",
   keywords: ["Frontend Developer", "React.js", "Next.js", "TypeScript", "Bootstrap", "Tailwinde CSS"],

@@ -5,17 +5,14 @@ import { motion } from "framer-motion";
 import { GitBranch, Link2 as Linkedin, Mail, Send, MapPin, Clock, ArrowRight } from "lucide-react";
 import SectionHeader from "@/components/ui/SectionHeader";
 import FadeIn from "@/components/ui/FadeIn";
+import { SOCIAL_LINKS } from "@/constants";
 
 const info = [
-  { icon:Mail, label:"Email", value:"hello@alexmorgan.dev", href:"mailto:hello@alexmorgan.dev" },
-  { icon:MapPin, label:"Location", value:"San Francisco, CA", href:"#" },
+  { icon:Mail, label:"Email", value:"abdullahadel365@gmail.com", href:"mailto:abdullahadel365@gmail.com" },
+  { icon:MapPin, label:"Location", value:"Faisal, Giza", href:"#" },
   { icon:Clock, label:"Response Time", value:"Within 24 hours", href:"#" },
 ];
-const socials = [
-  { icon:GitBranch, label:"GitHub",   href:"https://github.com",   color:"#f0f6ff" },
-  { icon:Linkedin,  label:"LinkedIn", href:"https://linkedin.com", color:"#0ea5e9" },
-  { icon:Mail,      label:"Email",    href:"mailto:hello@alexmorgan.dev", color:"#06b6d4" },
-];
+
 
 export default function ContactSection() {
   const [form, setForm] = useState({ name:"", email:"", subject:"", message:"" });
@@ -66,15 +63,16 @@ export default function ContactSection() {
               <div className="glass" style={{ padding:24, flex:1 }}>
                 <p className="label-sm" style={{ marginBottom:14 }}>Follow Me</p>
                 <div style={{ display:"flex", gap:10 }}>
-                  {socials.map(({ icon:Icon, label, href, color }) => (
-                    <motion.a key={label} href={href} target="_blank" rel="noopener noreferrer"
-                      aria-label={label} className="icon-btn"
-                      whileHover={{ scale:1.1, y:-3 }} whileTap={{ scale:0.95 }}
-                      onMouseEnter={e => { e.currentTarget.style.color=color; e.currentTarget.style.borderColor=`${color}40`; e.currentTarget.style.background=`${color}10`; }}
-                      onMouseLeave={e => { e.currentTarget.style.color="rgba(240,246,255,0.6)"; e.currentTarget.style.borderColor="rgba(255,255,255,0.08)"; e.currentTarget.style.background="rgba(255,255,255,0.05)"; }}>
-                      <Icon size={18} strokeWidth={1.5} />
-                    </motion.a>
-                  ))}
+                  {SOCIAL_LINKS.map(link => {
+                    const Icon = link.icon;
+                    return (
+                      <motion.a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer"
+                        aria-label={link.label} className="icon-btn"
+                        whileHover={{ scale:1.1, y:-3 }} whileTap={{ scale:0.95 }}>
+                        {Icon && <Icon size={18} strokeWidth={1.5} />}
+                      </motion.a>
+                    );
+                  })}
                 </div>
               </div>
             </div>
@@ -88,12 +86,12 @@ export default function ContactSection() {
                 <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:18 }}>
                   <div>
                     <p className="label-sm" style={{ marginBottom:8 }}>Your Name *</p>
-                    <input type="text" required placeholder="John Doe" value={form.name}
+                    <input type="text" required placeholder="Your Name" value={form.name}
                       onChange={e => setForm({...form, name:e.target.value})} className="input" />
                   </div>
                   <div>
                     <p className="label-sm" style={{ marginBottom:8 }}>Email Address *</p>
-                    <input type="email" required placeholder="john@company.com" value={form.email}
+                    <input type="email" required placeholder="email@company.com" value={form.email}
                       onChange={e => setForm({...form, email:e.target.value})} className="input" />
                   </div>
                 </div>
