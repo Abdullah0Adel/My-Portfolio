@@ -90,7 +90,7 @@ export default function HeroSection() {
 
           {/* CTAs */}
           <motion.div variants={item} style={{ display:"flex", flexWrap:"wrap", justifyContent:"center", gap:16, marginBottom:40 }}>
-<a href="/public/Abdullah_Adel.pdf" download="Abdullah_Adel.pdf" className="btn-primary">
+<a href="/Abdullah_Adel.pdf" download="Abdullah_Adel.pdf" className="btn-primary">
   <Download size={16} />Download CV
 </a>
             <button className="btn-secondary" onClick={() => go("projects")}><span>View Projects</span><ArrowRight size={16} /></button>
