@@ -19,6 +19,19 @@ const container = {
   show: { transition: { staggerChildren: 0.12, delayChildren: 0.3 } },
 };
 
+const handleDownload = async () => {
+  const response = await fetch("/Abdullah_Adel.pdf");
+  const blob = await response.blob();
+  const url = URL.createObjectURL(new Blob([blob], { type: "application/pdf" }));
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "Abdullah_Adel.pdf";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 100);
+};
+
 export default function HeroSection() {
   const go = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
@@ -77,7 +90,9 @@ export default function HeroSection() {
 
           {/* CTAs */}
           <motion.div variants={item} style={{ display:"flex", flexWrap:"wrap", justifyContent:"center", gap:16, marginBottom:40 }}>
-            <a href="/cv.pdf" download className="btn-primary"><Download size={16} />Download CV</a>
+<a href="/public/Abdullah_Adel.pdf" download="Abdullah_Adel.pdf" className="btn-primary">
+  <Download size={16} />Download CV
+</a>
             <button className="btn-secondary" onClick={() => go("projects")}><span>View Projects</span><ArrowRight size={16} /></button>
           </motion.div>
 
