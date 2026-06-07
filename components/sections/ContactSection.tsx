@@ -6,6 +6,8 @@ import { GitBranch, Link2 as Linkedin, Mail, Send, MapPin, Clock, ArrowRight } f
 import SectionHeader from "@/components/ui/SectionHeader";
 import FadeIn from "@/components/ui/FadeIn";
 import { SOCIAL_LINKS } from "@/constants";
+import emailjs from "@emailjs/browser";
+
 
 const info = [
   { icon:Mail, label:"Email", value:"abdullahadel365@gmail.com", href:"mailto:abdullahadel365@gmail.com" },
@@ -19,13 +21,30 @@ export default function ContactSection() {
   const [status, setStatus] = useState<"idle"|"sending"|"sent">("idle");
 
   const submit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus("sending");
-    await new Promise(r => setTimeout(r, 1500));
+  e.preventDefault();
+  setStatus("sending");
+
+  try {
+    await emailjs.send(
+      "service_p4hcavj",     // من EmailJS dashboard
+      "template_u17wffi",    // من EmailJS dashboard
+      {
+        name: form.name,
+        email: form.email,
+        subject: form.subject,
+        message: form.message,
+      },
+      "sBvXTjboD2pDD2zmq"      // من EmailJS dashboard → Account
+    );
     setStatus("sent");
-    setForm({ name:"", email:"", subject:"", message:"" });
+    setForm({ name: "", email: "", subject: "", message: "" });
     setTimeout(() => setStatus("idle"), 3000);
-  };
+  } catch (error) {
+    console.error(error);
+    setStatus("idle");
+    alert("Something went wrong, please try again.");
+  }
+};
 
   return (
     <section id="contact" className="section">
