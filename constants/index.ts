@@ -37,18 +37,18 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 export const SKILLS: Skill[] = [
-  { name: "HTML5", icon: FaHtml5, category: "frontend", level: 95 },
-  { name: "CSS3", icon: FaCss3Alt, category: "frontend", level: 92 },
-  { name: "JavaScript", icon: FaJs, category: "frontend", level: 90 },
-  { name: "TypeScript", icon: SiTypescript, category: "frontend", level: 85 },
-  { name: "React.js", icon: FaReact, category: "frontend", level: 92 },
-  { name: "Next.js", icon: SiNextdotjs, category: "frontend", level: 88 },
-  { name: "Redux Toolkit", icon: SiRedux, category: "frontend", level: 82 },
-  { name: "Tailwind CSS", icon: SiTailwindcss, category: "frontend", level: 90 },
-  { name: "Bootstrap", icon: FaBootstrap, category: "frontend", level: 85 },
-  { name: "Strapi", icon: SiStrapi, category: "backend", level: 75 },
-  { name: "REST APIs", icon: SiAxios, category: "backend", level: 88 },
-  { name: "Git & GitHub", icon: FaGithub, category: "tools", level: 88 },
+  { name: "HTML5", icon: FaHtml5, category: "frontend", level: 100 },
+  { name: "CSS3", icon: FaCss3Alt, category: "frontend", level: 100 },
+  { name: "JavaScript", icon: FaJs, category: "frontend", level: 100 },
+  { name: "TypeScript", icon: SiTypescript, category: "frontend", level: 100 },
+  { name: "React.js", icon: FaReact, category: "frontend", level: 100 },
+  { name: "Next.js", icon: SiNextdotjs, category: "frontend", level: 80 },
+  { name: "Redux Toolkit", icon: SiRedux, category: "frontend", level: 75 },
+  { name: "Tailwind CSS", icon: SiTailwindcss, category: "frontend", level: 100 },
+  { name: "Bootstrap", icon: FaBootstrap, category: "frontend", level: 100 },
+  { name: "Strapi", icon: SiStrapi, category: "backend", level: 85 },
+  { name: "REST APIs", icon: SiAxios, category: "backend", level: 100 },
+  { name: "Git & GitHub", icon: FaGithub, category: "tools", level: 95 },
 ];
 
 export const SERVICES: Service[] = [

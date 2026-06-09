@@ -57,7 +57,7 @@ export default function HeroSection() {
         <motion.div variants={container} initial="hidden" animate="show">
 
           {/* Badge */}
-          <motion.div variants={item} style={{ display:"flex", justifyContent:"center", marginBottom:32 }}>
+          <motion.div variants={item} style={{ display:"flex", justifyContent:"center", marginBottom:25 }}>
             <span className="label"><Sparkles size={12} />Available for freelance work</span>
           </motion.div>
 
