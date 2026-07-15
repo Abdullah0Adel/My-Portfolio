@@ -127,7 +127,7 @@ export const PROJECTS: Project[] = [
     image:
       "/images/Zone7.png",
     technologies: ["React.js", "JavaScript", "Context Api", "Bootstrap",],
-    liveUrl: "https://zone7.netlify.app/",
+    liveUrl: "https://ecommerce-zone7.vercel.app/",
     githubUrl: "https://github.com/Abdullah0Adel/Ecommerce-zone7-",
     featured: true,
     note: ""
