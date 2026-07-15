@@ -139,7 +139,7 @@ export const PROJECTS: Project[] = [
     image:
       "/images/bookstore.png",
     technologies: ["React.js", "JavaScript", "Context API", "REST APIs", "Bootstrap" ],
-    liveUrl: "https://book-store-25.netlify.app/",
+    liveUrl: "https://bookstore-azure-mu.vercel.app/",
     githubUrl: "https://github.com/Abdullah0Adel/Bookstore",
     featured: true,
     note: ""
