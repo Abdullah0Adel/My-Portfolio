@@ -10,6 +10,7 @@ export interface Project {
   liveUrl: string;
   githubUrl: string;
   featured?: boolean;
+  note: string;
 }
 
 export interface Skill {

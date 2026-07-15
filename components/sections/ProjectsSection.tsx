@@ -50,6 +50,9 @@ export default function ProjectsSection() {
                   <div className="project-tags">
                     {p.technologies.map(t => <span key={t} className="tag">{t}</span>)}
                   </div>
+                  {p.note !== "" && (
+                    <p className="body text-muted">Note: {p.note} </p>
+                  )}
                   <div className="project-footer">
                     <a href={p.liveUrl} target="_blank" rel="noopener noreferrer" className="btn-cyan"><ExternalLink size={13} />Live Demo</a>
                     <a href={p.githubUrl} target="_blank" rel="noopener noreferrer" className="btn-outline"><GitBranch size={13} />Source</a>

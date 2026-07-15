@@ -130,6 +130,7 @@ export const PROJECTS: Project[] = [
     liveUrl: "https://zone7.netlify.app/",
     githubUrl: "https://github.com/Abdullah0Adel/Ecommerce-zone7-",
     featured: true,
+    note: ""
   },
   {
     id: 2,
@@ -141,6 +142,7 @@ export const PROJECTS: Project[] = [
     liveUrl: "https://book-store-25.netlify.app/",
     githubUrl: "https://github.com/Abdullah0Adel/Bookstore",
     featured: true,
+    note: ""
   },
   {
     id: 3,
@@ -152,6 +154,7 @@ export const PROJECTS: Project[] = [
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit", "REST APIs",],
     liveUrl: "https://r7-react-cure-2-8lbg.vercel.app",
     githubUrl: "https://github.com/Huma-volve/R7-React-Cure-2",
+    note: "OTP will be => 1234"
   },
 /*   {
     id: 4,
