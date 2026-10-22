@@ -156,6 +156,19 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/Huma-volve/R7-React-Cure-2",
     note: "OTP will be => 1234"
   },
+    {
+    id: 4,
+    title: "Dutify",
+    description:
+      "Developed a full-stack task management platform with project-based workspaces, role-based access for admins and employees, task assignment, member management, and real-time updates, all in a clean and responsive interface.",
+    image:
+      "/images/Dutify.png",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit", "REST APIs", "supabase"],
+    liveUrl: "https://dutify-three.vercel.app",
+    githubUrl: "https://github.com/Abdullah0Adel/Dutify",
+    note: "account for demo: email: abdullah@gmail.com / pass: 123456 "
+  },
+  
 /*   {
     id: 4,
     title: "TaskFlow Pro",
